@@ -19,6 +19,11 @@ a:hover, a:focus {
   border-bottom-left-radius: 0;
 }
 
+.phones-ads {
+  width: 100%;
+  max-width: 740px;
+}
+
 .form-signin .form-control {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
