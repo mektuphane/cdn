@@ -31,5 +31,5 @@ $(document).ready(function() {
     });
 });
 
-$.backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
+// $.backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 $("#myCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
