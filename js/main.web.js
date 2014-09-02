@@ -30,3 +30,6 @@ $(document).ready(function() {
      	limitReachedClass: 'label label-success'
     });
 });
+
+$.backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+$("#myCarousel").backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
