@@ -8,6 +8,10 @@ a:hover, a:focus {
 	text-decoration: underline;
 }
 
+label {
+  border-radius: 0;
+}
+
 .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
