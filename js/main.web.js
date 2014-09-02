@@ -31,5 +31,4 @@ $(document).ready(function() {
     });
 });
 
-$.backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
-$("#myCarousel").backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+$("#myCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
