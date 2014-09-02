@@ -26,6 +26,7 @@ loadScripts([
     "http://cdn.mektuphane.com/js/bootstrap-multiselect.js",
     "http://cdn.mektuphane.com/js/remoteNonStopPageScroll.js",
     "http://cdn.mektuphane.com/js/bootstrap-maxlength.min.js",
+    "//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js",
     "http://cdn.mektuphane.com/js/attach.web.js",
     "http://cdn.mektuphane.com/js/main.web.js"
 ],function(){
