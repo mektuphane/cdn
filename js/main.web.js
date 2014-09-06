@@ -52,12 +52,12 @@ function onMessage(evt) {
     evt_counter = evt_counter + 1;
     console.log(evt.data); 
     var obj = jQuery.parseJSON(evt.data);
-    console.log(obj.g);
-    console.log(obj.i);
-    jQuery('#message_counter').html("<span class='label label-default'>"+ evt_counter +"</span>")
-    jQuery.ajax({type:'GET', url:'/support/message/'+obj.i,success:function(data,textStatus){jQuery('#message_'+obj.i).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});
-    document.getElementById("panel-heading_"+obj.i).style.background = "#A6FFB1";
-    document.title = "("+ evt_counter +") Mektuphane";
+    if(obj.w == '1'){
+        jQuery('#message_counter').html("<span class='label label-default'>"+ evt_counter +"</span>")
+        jQuery.ajax({type:'GET', url:'/support/message/'+obj.i,success:function(data,textStatus){jQuery('#message_'+obj.i).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});
+        document.getElementById("panel-heading_"+obj.i).style.background = "#A6FFB1";
+        document.title = "("+ evt_counter +") Mektuphane";
+    }
 } 
 function onError(evt) { 
     console.log(evt.data); 
