@@ -172,3 +172,7 @@ a:hover, a:focus {
 .thumbnail {
   border-radius: 0px;
 }
+
+.mCSB_scrollTools{
+  right: -15px;
+}
