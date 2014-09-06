@@ -29,6 +29,7 @@ $(document).ready(function() {
      	warningClass: 'label label-warning',
      	limitReachedClass: 'label label-success'
     });
+
 });
 
 $("#myCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
