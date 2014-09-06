@@ -30,5 +30,5 @@ loadScripts([
     "http://cdn.mektuphane.com/js/attach.web.js",
     "http://cdn.mektuphane.com/js/main.web.js"
 ],function(){
-    console.info('loaded.');
+    console.info('LOADED');
 });
