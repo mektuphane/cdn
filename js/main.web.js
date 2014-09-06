@@ -73,11 +73,11 @@ function onMessage(evt) {
     console.log(evt.data); 
     var obj = jQuery.parseJSON(evt.data);
     if(obj.w == '1'){
+        ion.sound.play("tap");
         jQuery('#message_counter').html("<span class='label label-default'>!</span>")
         jQuery.ajax({type:'GET', url:'/support/message/'+obj.i,success:function(data,textStatus){jQuery('#message_'+obj.i).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){  jQuery("#list-group_"+obj.i).mCustomScrollbar("scrollTo","bottom") }});
         document.getElementById("panel-heading_"+obj.i).style.background = "#A6FFB1";
         document.title = "(!) Mektuphane";
-        ion.sound.play("tap");
     }
 } 
 function onError(evt) { 
