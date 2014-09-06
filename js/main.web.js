@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 (function($){ 
     $(window).load(function(){
-        $("[id^='list-group_']").mCustomScrollbar("scrollTo","bottom");
+        $("[id^='list-group_']").mCustomScrollbar("scrollTo","last");
     });
  })(jQuery);
 
