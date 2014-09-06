@@ -1,5 +1,11 @@
 $('.cropme').simpleCropper();
 ion.sound({
+    sounds: [
+        {
+            name: "tap",
+            volume: 1.0
+        },
+    ],
     path: "../sounds/",
     preload: true
 });
