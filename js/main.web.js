@@ -53,10 +53,12 @@ function onMessage(evt) {
     console.log(evt.data); 
     var obj = jQuery.parseJSON(evt.data);
     console.log(obj.g);
+    console.log(obj.i);
     jQuery('#message_counter').html("<span class='label label-default'>"+ evt_counter +"</span>")
+    jQuery.ajax({type:'POST',data:'content=' + content, url:'/support/message/'+obj.i,success:function(data,textStatus){jQuery('#message_'+obj.i).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});
     document.title = "("+ evt_counter +") Mektuphane";
 } 
 function onError(evt) { 
     console.log(evt.data); 
 }  
-window.addEventListener("load", init, false); 
+window.addEventListener("load", init, false);
