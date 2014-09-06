@@ -34,7 +34,7 @@ $(document).ready(function() {
 // $.backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 $("#myCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 
-var wsUri = "ws://localhost:8000/room/${member.code}"; 
+
 var evt_counter = 0;
 function init() { output = document.getElementById("output"); testWebSocket(); }  
 function testWebSocket() { 
