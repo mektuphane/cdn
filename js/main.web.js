@@ -31,13 +31,11 @@ $(document).ready(function() {
     });
 });
 
-// $.backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 $("#myCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 
-
 var evt_counter = 0;
-function init() { output = document.getElementById("output"); testWebSocket(); }  
-function testWebSocket() { 
+function init() { initWebSocket(); }  
+function initWebSocket() { 
     websocket = new WebSocket(wsUri); 
     websocket.onopen = function(evt) { onOpen(evt) }; 
     websocket.onclose = function(evt) { onClose(evt) }; 
@@ -56,7 +54,7 @@ function onMessage(evt) {
     var obj = jQuery.parseJSON(evt.data);
     console.log(obj.g);
     jQuery('#message_counter').html("<span class='label label-default'>"+ evt_counter +"</span>")
-    document.title = "("+ evt_counter +")" + " <g:layoutTitle default='mektuphane'/>";
+    document.title = "("+ evt_counter +") " + $(document).find("title").text();;
 } 
 function onError(evt) { 
     console.log(evt.data); 
