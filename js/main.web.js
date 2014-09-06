@@ -6,7 +6,7 @@ $(document).ready(function() {
                 {name: "beer_can_opening"},
                 {name: "tap"}
             ],
-            path: "sounds/",
+            path: "http://cdn.mektuphane.com/sounds/",
             preload: true,
             volume: 1.0
         });
