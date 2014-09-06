@@ -1,16 +1,16 @@
 $('.cropme').simpleCropper();
-ion.sound({
-    sounds: [
-        {
-            name: "tap",
-            volume: 1.0
-        },
-    ],
-    path: "../sounds/",
-    preload: true
-});
-
 $(document).ready(function() {
+
+    ion.sound({
+            sounds: [
+                {name: "beer_can_opening"},
+                {name: "tap"}
+            ],
+            path: "sounds/",
+            preload: true,
+            volume: 1.0
+        });
+
     $('.multiselect').multiselect({
         enableFiltering: true,
         numberDisplayed: 0,
