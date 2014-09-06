@@ -54,7 +54,7 @@ function onMessage(evt) {
     var obj = jQuery.parseJSON(evt.data);
     console.log(obj.g);
     jQuery('#message_counter').html("<span class='label label-default'>"+ evt_counter +"</span>")
-    document.title = "("+ evt_counter +") " + $(document).find("title").text();;
+    document.title = "("+ evt_counter +") Mektuphane";
 } 
 function onError(evt) { 
     console.log(evt.data); 
