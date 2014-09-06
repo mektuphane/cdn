@@ -32,6 +32,12 @@ $(document).ready(function() {
 
 });
 
+(function($){ 
+    $(window).load(function(){
+        $("[id^='list-group_']").mCustomScrollbar();
+    });
+ })(jQuery);
+
 $("#myCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 
 function init() { initWebSocket(); }  
