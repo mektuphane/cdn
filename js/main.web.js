@@ -1,4 +1,8 @@
 $('.cropme').simpleCropper();
+ion.sound({
+    path: "../sounds/",
+    preload: true
+});
 
 $(document).ready(function() {
     $('.multiselect').multiselect({
