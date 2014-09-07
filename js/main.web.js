@@ -85,6 +85,7 @@ function onMessage(evt) {
         document.getElementById("panel-heading_"+obj.i).style.background = "#fefefe";
         document.getElementById("content_"+obj.i).style.display = 'none';
         document.getElementById("button_"+obj.i).style.display = 'none';
+        document.getElementById("loading_"+obj.i).innerHTML = 'Destek konusu kapatıldı.';
     }
 } 
 function onError(evt) { 
