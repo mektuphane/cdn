@@ -81,6 +81,11 @@ function onMessage(evt) {
             document.getElementById("panel-heading_"+obj.i).style.background = "#A6FFB1";
         }
     }
+    if(obj.o == '0'){
+        document.getElementById("panel-heading_"+obj.i).style.background = "#fefefe";
+        document.getElementById("content_"+obj.i).style.display = 'none';
+        document.getElementById("button_"+obj.i).style.display = 'none';
+    }
 } 
 function onError(evt) { 
     console.log(evt.data); 
