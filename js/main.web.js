@@ -70,7 +70,6 @@ function onClose(evt) {
 }  
 function onMessage(evt) {
     evt_counter = evt_counter + 1;
-    console.log(evt.data); 
     var obj = jQuery.parseJSON(evt.data);
     if(obj.w == '1'){
         ion.sound.play("glass");
