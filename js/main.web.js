@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     ion.sound({
             sounds: [
-                {name: "beer_can_opening"},
+                {name: "glass"},
                 {name: "tap"}
             ],
             path: "http://cdn.mektuphane.com/sounds/",
@@ -73,7 +73,7 @@ function onMessage(evt) {
     console.log(evt.data); 
     var obj = jQuery.parseJSON(evt.data);
     if(obj.w == '1'){
-        ion.sound.play("tap");
+        ion.sound.play("glass");
         jQuery('#message_counter').html("<span class='label label-default'>!</span>")
         document.title = "(!) Mektuphane";
         if(document.getElementById("panel-heading_"+obj.i)){
