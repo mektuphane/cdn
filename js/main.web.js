@@ -81,6 +81,11 @@ function onMessage(evt) {
             document.getElementById("panel-heading_"+obj.i).style.background = "#A6FFB1";
         }
     }
+    if(obj.w == '0'){
+        if(document.getElementById("panel-heading_"+obj.i)){
+            jQuery.ajax({type:'GET', url:'/support/message/'+obj.i,success:function(data,textStatus){jQuery('#message_'+obj.i).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){  jQuery("#list-group_"+obj.i).mCustomScrollbar("scrollTo","bottom") }});
+        }
+    }
     if(obj.o == '0'){
         document.getElementById("panel-heading_"+obj.i).style.background = "#fefefe";
         document.getElementById("content_"+obj.i).style.display = 'none';
