@@ -82,6 +82,7 @@
 }
 
 #upload{
+ border: 1px solid #cccccc;
  padding-left: 0px; 
  padding-right: 0px;
  width: 100%;
@@ -94,6 +95,7 @@
     height:320px;
   }
   #upload{
+   border: 1px solid #cccccc;
    padding-left: 0px; 
    padding-right: 0px;
    width: 450px;
@@ -107,6 +109,7 @@
     height:376px;
   }
   #upload{
+   border: 1px solid #cccccc;
    padding-left: 0px; 
    padding-right: 0px;
    width: 530px;
@@ -124,7 +127,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
-  border: 1px solid #cccccc;
 }
 
 .cropme:hover{
