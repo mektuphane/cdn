@@ -2,8 +2,8 @@
 
   $.fn.simpleCropper = function() {
 
-    var image_dimension_x = 800;
-    var image_dimension_y = 568;
+    var image_dimension_x = 530;
+    var image_dimension_y = image_dimension_x / 1.41;
     var scaled_width = 0;
     var scaled_height = 0;
     var x1 = 0;
@@ -26,8 +26,8 @@
       aspXX = $(this).width();
       aspYY = $(this).height();
       
-      aspX = 800;
-      aspY = 568;
+      aspX = 530;
+      aspY = aspX / 1.41;
       file_display_area = $(this);
       $('#fileInput').click();
     });
