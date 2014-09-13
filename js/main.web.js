@@ -73,8 +73,6 @@ function onMessage(evt) {
     var obj = jQuery.parseJSON(evt.data);
     if(obj.w == '1'){
         ion.sound.play("glass");
-        jQuery('#message_counter').html("<span class='label label-default'>!</span>")
-        document.title = "(!) Mektuphane";
         if(document.getElementById("panel-heading_"+obj.i)){
             jQuery.ajax({type:'GET', url:'/support/message/'+obj.i,success:function(data,textStatus){jQuery('#message_'+obj.i).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){},complete:function(XMLHttpRequest,textStatus){  jQuery("#list-group_"+obj.i).mCustomScrollbar("scrollTo","bottom") }});
             document.getElementById("panel-heading_"+obj.i).style.background = "#A6FFB1";
