@@ -118,12 +118,13 @@
   position: relative;
   float: left;
   width: 100%;
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
   margin-bottom: 5px;
   background-image: url('../img/attach/UploadLight.png');
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
+  border: 1px solid #cccccc;
 }
 
 .cropme:hover{
