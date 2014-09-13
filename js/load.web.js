@@ -22,6 +22,7 @@ function loadScripts(array,callback){
 loadScripts([
 	"http://cdn.mektuphane.com/js/jquery-1.11.1.min.js",
 	"http://cdn.mektuphane.com/js/bootstrap.min.js",
+    "//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js",
     "http://cdn.mektuphane.com/js/jquery.Jcrop.min.js",
     "http://cdn.mektuphane.com/js/bootstrap-multiselect.js",
     "http://cdn.mektuphane.com/js/remoteNonStopPageScroll.js",
