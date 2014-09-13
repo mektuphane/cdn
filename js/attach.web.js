@@ -26,8 +26,8 @@
       aspXX = $(this).width();
       aspYY = $(this).height();
       
-      aspX = 800;
-      aspY = 568;
+      aspX = 530;
+      aspY = 265;
       file_display_area = $(this);
       $('#fileInput').click();
     });

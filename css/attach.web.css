@@ -31,7 +31,7 @@
 
 #preview .buttons{
   width: 36px;
-  position: absolute;
+  /*position: absolute;*/
   bottom:0px;
   right: -44px;
 }
