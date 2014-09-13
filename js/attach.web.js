@@ -2,7 +2,7 @@
 
   $.fn.simpleCropper = function() {
 
-    var image_dimension_x = 530;
+    var image_dimension_x = 1056;
     var image_dimension_y = image_dimension_x / 1.41;
     var scaled_width = 0;
     var scaled_height = 0;
