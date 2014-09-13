@@ -87,10 +87,6 @@
           current_image = new Image();
           current_image.src = reader.result;
           current_image.id = "photo";
-
-          image_dimension_x = image_dimension_x / 3;
-          image_dimension_y = image_dimension_y / 3;
-
           current_image.style['maxWidth'] = image_dimension_x + 'px';
           current_image.style['maxHeight'] = image_dimension_y + 'px';
           current_image.onload = function() {
@@ -149,7 +145,7 @@
               bgColor: '#747474',
               bgOpacity: .4,
               aspectRatio: aspX / aspY,
-              setSelect: [0, 0, selection_width * 3, selection_height * 3]
+              setSelect: [0, 0, selection_width, selection_height]
             }, function() {
               jcrop_api = this;
             });
