@@ -87,8 +87,8 @@
           current_image = new Image();
           current_image.src = reader.result;
           current_image.id = "photo";
-          current_image.style['maxWidth'] = 100 + '%';
-          current_image.style['maxHeight'] = 71 + '%';
+          current_image.style['maxWidth'] = image_dimension_x / 3 + 'px';
+          current_image.style['maxHeight'] = image_dimension_y / 3 + 'px';
           current_image.onload = function() {
             // Calculate scaled image dimensions
             if (current_image.width > image_dimension_x || current_image.height > image_dimension_y) {
