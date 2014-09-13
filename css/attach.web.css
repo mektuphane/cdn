@@ -76,14 +76,12 @@
 }
 
 .simple-cropper-images{
-  width: 820px;
+  width: 450px;
   margin: 0 auto 20px;
   
 }
 
 .upload-photo{
-  width: 100%;
-  height: 376px;
   border: 1px solid #cccccc;
 }
 
