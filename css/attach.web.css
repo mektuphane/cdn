@@ -81,6 +81,10 @@
   
 }
 
+.upload-photo{
+  border: 1px solid #cccccc;
+}
+
 #upload{
  padding-left: 0px; 
  padding-right: 0px;
