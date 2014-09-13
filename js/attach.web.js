@@ -198,7 +198,7 @@
       var dataUrl = canvas.toDataURL();
       var image = document.createElement('img');
       //image.src = dataUrl;
-      image.src = 'http://localhost:8888/cdn/img/attach/loader.gif';
+      image.src = 'http://cdn.mektuphane.com/img/attach/loader.gif';
       // image.width = aspXX;
       // image.height = aspYY;
       image.className="upload-photo";
