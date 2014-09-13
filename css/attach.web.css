@@ -82,7 +82,6 @@
 }
 
 #upload{
- border: 1px solid #cccccc;
  padding-left: 0px; 
  padding-right: 0px;
  width: 100%;
@@ -91,11 +90,11 @@
 
 @media (min-width: 992px){
   .upload-photo{
+    border: 1px solid #cccccc;
     width:450px;
     height:320px;
   }
   #upload{
-   border: 1px solid #cccccc;
    padding-left: 0px; 
    padding-right: 0px;
    width: 450px;
@@ -105,11 +104,11 @@
 
 @media (min-width: 1200px){
   .upload-photo{
+    border: 1px solid #cccccc;
     width:530px;
     height:376px;
   }
   #upload{
-   border: 1px solid #cccccc;
    padding-left: 0px; 
    padding-right: 0px;
    width: 530px;
