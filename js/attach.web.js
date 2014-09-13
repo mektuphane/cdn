@@ -2,8 +2,8 @@
 
   $.fn.simpleCropper = function() {
 
-    var image_dimension_x = 530;
-    var image_dimension_y = 265;
+    var image_dimension_x = 600;
+    var image_dimension_y = 600;
     var scaled_width = 0;
     var scaled_height = 0;
     var x1 = 0;
@@ -18,16 +18,16 @@
     var file_display_area = null;
     var ias = null;
     var jcrop_api;
-    var bottom_html = "<input type='file' id='fileInput' name='files[]'/><canvas id='canvas' style='display:none;'></canvas><div id='preview'><div class='buttons'><div class='cancel'></div><div class='ok'></div></div></div>";
-    $('#upload').append(bottom_html);
+    var bottom_html = "<input type='file' id='fileInput' name='files[]'/><canvas id='canvas' style='display:none;'></canvas><div id='modal'></div><div id='preview'><div class='buttons'><div class='cancel'></div><div class='ok'></div></div></div>";
+    // $('body').append(bottom_html);
 
     //add click to element
     this.click(function() {
       aspXX = $(this).width();
       aspYY = $(this).height();
       
-      aspX = 530;
-      aspY = 265;
+      aspX = 800;
+      aspY = 568;
       file_display_area = $(this);
       $('#fileInput').click();
     });
