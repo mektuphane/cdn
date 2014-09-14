@@ -32,8 +32,8 @@
 #preview .buttons{
   width: 36px;
   /*position: absolute;*/
-  bottom:0px;
-  right: -44px;
+  /*bottom:0px;*/
+  /*right: -44px;*/
 }
 
 #preview .buttons .ok{
@@ -78,7 +78,6 @@
 .simple-cropper-images{
   width: 450px;
   margin: 0 auto 20px;
-  
 }
 
 .upload-photo{
