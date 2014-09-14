@@ -238,6 +238,3 @@
     });
   }
 }(jQuery));
-
-// $("#upload").css("height", $("#upload").width()/1.41);
-$(".upload-photo").css("height", $(".upload-photo").width()/1.41);
