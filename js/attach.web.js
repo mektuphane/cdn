@@ -101,33 +101,33 @@
           current_image.style['maxHeight'] = image_dimension_y + 'px';
           current_image.onload = function() {
             // Calculate scaled image dimensions
-            // if (current_image.width > image_dimension_x || current_image.height > image_dimension_y) {
-            //   if (current_image.width > current_image.height) {
-            //     scaled_width = image_dimension_x;
-            //     scaled_height = image_dimension_x * current_image.height / current_image.width;
-            //   }
-            //   if (current_image.width < current_image.height) {
-            //     scaled_height = image_dimension_y;
-            //     scaled_width = image_dimension_y * current_image.width / current_image.height;
-            //   }
-            //   if (current_image.width == current_image.height) {
-            //     scaled_width = image_dimension_x;
-            //     scaled_height = image_dimension_y;
-            //   }
-            // }
-            // else {
-              scaled_width = image_dimension_x;
-              scaled_height = image_dimension_y;
-            // }
+            if (current_image.width > image_dimension_x || current_image.height > image_dimension_y) {
+              if (current_image.width > current_image.height) {
+                scaled_width = image_dimension_x;
+                scaled_height = image_dimension_x * current_image.height / current_image.width;
+              }
+              if (current_image.width < current_image.height) {
+                scaled_height = image_dimension_y;
+                scaled_width = image_dimension_y * current_image.width / current_image.height;
+              }
+              if (current_image.width == current_image.height) {
+                scaled_width = image_dimension_x;
+                scaled_height = image_dimension_y;
+              }
+            }
+            else {
+              scaled_width = current_image.width;
+              scaled_height = current_image.height;
+            }
 
 
             // Position the modal div to the center of the screen
             $('#modal').css('display', 'block');
-            var window_width = $(window).width() / 2 - scaled_width / 2 + "px";
+            var window_width = $(window).width() / 2 - $('#preview').width() / 2 + "px";
             var window_height = $(window).height() / 2 - scaled_height / 2 + "px";
-            
-            console.log($(window).width());
-            console.log(scaled_width);
+
+            console.log(window_width);
+            console.log(window_height);
 
             // Show image in modal view
             $("#preview").css("top", window_height);
