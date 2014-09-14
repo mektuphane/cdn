@@ -145,7 +145,7 @@
               bgColor: '#747474',
               bgOpacity: .4,
               aspectRatio: aspX / aspY,
-              setSelect: [0, 0, selection_width * 3, selection_height * 3]
+              setSelect: [0, 0, selection_width, selection_height]
             }, function() {
               jcrop_api = this;
             });
