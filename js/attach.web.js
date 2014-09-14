@@ -2,8 +2,19 @@
 
   $.fn.simpleCropper = function() {
 
-    var image_dimension_x = $(".upload-photo").width();
+    var image_dimension_x = 300;
     var image_dimension_y = image_dimension_x / 1.41;
+
+    if ($(window).width() > $(window).height()) {
+      image_dimension_y = $(window).height();
+      image_dimension_x = image_dimension_y * 1.41;;
+      
+    }
+    else {
+      image_dimension_x = $(window).width();
+      image_dimension_y = image_dimension_x / 1.41;
+    }
+
     var scaled_width = 0;
     var scaled_height = 0;
     var x1 = 0;
