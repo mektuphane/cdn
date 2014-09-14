@@ -5,12 +5,12 @@
     var image_dimension_x = 300;
     var image_dimension_y = image_dimension_x / 1.41;
 
-    if ($(document).width() > $(document).height()) {
-      image_dimension_y = $(document).height()-50;
+    if ($(window).width() > $(window).height()) {
+      image_dimension_y = $(window).height()-200;
       image_dimension_x = image_dimension_y * 1.41;
     }
     else {
-      image_dimension_x = $(document).width()-20;
+      image_dimension_x = $(window).width()-20;
       image_dimension_y = image_dimension_x / 1.41;
     }
 
