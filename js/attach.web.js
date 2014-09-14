@@ -116,8 +116,8 @@
             //   }
             // }
             // else {
-              scaled_width = current_image.width;
-              scaled_height = current_image.height;
+              scaled_width = image_dimension_x;
+              scaled_height = image_dimension_y;
             // }
 
 
