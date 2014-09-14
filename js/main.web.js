@@ -15,7 +15,7 @@ $(document).ready(function() {
         enableFiltering: true,
         numberDisplayed: 0,
         nSelectedText: 'adrese kart gönderilecek.',
-        nonSelectedText: 'Defterden seçim yapılmadı. Adress ekleyiniz!',
+        nonSelectedText: 'Defterden seçim yapılmadı. Adres ekleyiniz!',
         buttonWidth: '100%',
         filterPlaceholder: 'Ara',
         onChange: function(option, checked) {
