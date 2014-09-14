@@ -95,6 +95,7 @@ function onError(evt) {
 }  
 window.addEventListener("load", init, false);
 
-
-$("#upload").css("height", $("#upload").width()/1.41);
-$(".upload-photo").css("height", $(".upload-photo").width()/1.41);
+$(​window​).bind("resize",function() {
+    $("#upload").css("height", $("#upload").width()/1.41);
+    $(".upload-photo").css("height", $(".upload-photo").width()/1.41);
+}
