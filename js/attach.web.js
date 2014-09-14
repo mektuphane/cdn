@@ -6,7 +6,7 @@
     var image_dimension_y = image_dimension_x / 1.41;
 
     if ($(window).width() > $(window).height()) {
-      image_dimension_y = $(window).height()-50;
+      image_dimension_y = $(window).height()-100;
       image_dimension_x = image_dimension_y * 1.41;
     }
     else {
