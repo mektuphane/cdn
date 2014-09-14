@@ -128,7 +128,7 @@
 
             // Show image in modal view
             $("#preview").css("top", window_height);
-            $("#preview").css("right", window_width);
+            $("#preview").css("left", window_width);
             $('#preview').show(500);
 
 
