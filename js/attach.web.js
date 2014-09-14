@@ -123,7 +123,7 @@
 
             // Position the modal div to the center of the screen
             $('#modal').css('display', 'block');
-            var window_width = $(window).width() / 2 - $('#preview').width() / 2 + "px";
+            var window_width = $(window).width() / 2 - $('#upload').width() / 2 + "px";
             var window_height = $(window).height() / 2 - scaled_height / 2 + "px";
 
             console.log(window_width);
