@@ -101,24 +101,24 @@
           current_image.style['maxHeight'] = image_dimension_y + 'px';
           current_image.onload = function() {
             // Calculate scaled image dimensions
-            if (current_image.width > image_dimension_x || current_image.height > image_dimension_y) {
-              if (current_image.width > current_image.height) {
-                scaled_width = image_dimension_x;
-                scaled_height = image_dimension_x * current_image.height / current_image.width;
-              }
-              if (current_image.width < current_image.height) {
-                scaled_height = image_dimension_y;
-                scaled_width = image_dimension_y * current_image.width / current_image.height;
-              }
-              if (current_image.width == current_image.height) {
-                scaled_width = image_dimension_x;
-                scaled_height = image_dimension_y;
-              }
-            }
-            else {
+            // if (current_image.width > image_dimension_x || current_image.height > image_dimension_y) {
+            //   if (current_image.width > current_image.height) {
+            //     scaled_width = image_dimension_x;
+            //     scaled_height = image_dimension_x * current_image.height / current_image.width;
+            //   }
+            //   if (current_image.width < current_image.height) {
+            //     scaled_height = image_dimension_y;
+            //     scaled_width = image_dimension_y * current_image.width / current_image.height;
+            //   }
+            //   if (current_image.width == current_image.height) {
+            //     scaled_width = image_dimension_x;
+            //     scaled_height = image_dimension_y;
+            //   }
+            // }
+            // else {
               scaled_width = current_image.width;
               scaled_height = current_image.height;
-            }
+            // }
 
 
             // Position the modal div to the center of the screen
