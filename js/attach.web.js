@@ -2,8 +2,8 @@
 
   $.fn.simpleCropper = function() {
 
-    var image_dimension_x = 1056 / 1.1;
-    var image_dimension_y = image_dimension_x / 1.41 / 1.1;
+    var image_dimension_x = 1024 / 1.5;
+    var image_dimension_y = image_dimension_x / 1.41 / 1.5;
     var scaled_width = 0;
     var scaled_height = 0;
     var x1 = 0;
@@ -145,7 +145,7 @@
               bgColor: '#747474',
               bgOpacity: .4,
               aspectRatio: aspX / aspY,
-              setSelect: [0, 0, selection_width * 1.1, selection_height * 1.1]
+              setSelect: [0, 0, selection_width * 1.5, selection_height * 1.5]
             }, function() {
               jcrop_api = this;
             });
