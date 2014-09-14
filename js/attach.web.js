@@ -211,8 +211,9 @@
       var dataUrl = canvas.toDataURL();
       var image = document.createElement('img');
       //image.src = dataUrl;
-      image.src = 'http://cdn.mektuphane.com/img/attach/loader.gif';
-      $(".cropme").css("background-image", "url('../img/attach/xloader.gif')");
+      //image.src = 'http://cdn.mektuphane.com/img/attach/loader.gif';
+      image.src = 'http://cdn.mektuphane.com/img/attach/transparent.gif';
+      //$("#1").css("background-image", "url('../img/attach/xloader.gif')");
       // image.width = aspXX;
       // image.height = aspYY;
       image.className="upload-photo";
