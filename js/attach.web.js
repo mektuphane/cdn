@@ -6,7 +6,7 @@
     var image_dimension_y = image_dimension_x / 1.41;
 
     if ($(window).width() > $(window).height()) {
-      image_dimension_y = $(window).height()-200;
+      image_dimension_y = $(window).height()-50;
       image_dimension_x = image_dimension_y * 1.41;
     }
     else {
@@ -123,7 +123,7 @@
 
             // Position the modal div to the center of the screen
             $('#modal').css('display', 'block');
-            var window_width = $(window).width() / 2 - $('#upload').width() / 2 + "px";
+            var window_width = $(window).width() / 2 - $('#previwe').width() / 2 + "px";
             var window_height = $(window).height() / 2 - scaled_height / 2 + "px";
 
             console.log(window_width);
