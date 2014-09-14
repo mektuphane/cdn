@@ -244,7 +244,7 @@
 
       // Show image in modal view
       $("#preview").css("top", window_height);
-      $("#preview").css("left", window_width);
+      $("#preview").css("left", 100);
     });
   }
 }(jQuery));
