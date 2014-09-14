@@ -1,8 +1,11 @@
 (function($) {
 
   $.fn.simpleCropper = function() {
-
-    var image_dimension_x = $(".upload-photo").width();
+  
+    var image_dimension_x = 300;
+    $(window).on('resize', function(){
+        image_dimension_x = $(".upload-photo").width();
+    }).trigger('resize');
     var image_dimension_y = image_dimension_x / 1.41;
     var scaled_width = 0;
     var scaled_height = 0;
