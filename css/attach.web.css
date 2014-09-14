@@ -31,9 +31,9 @@
 
 #preview .buttons{
   width: 36px;
-  /*position: absolute;*/
-  /*bottom:0px;*/
-  /*right: -44px;*/
+  position: absolute;
+  top:185px;
+  right: 40px;
 }
 
 #preview .buttons .ok{
