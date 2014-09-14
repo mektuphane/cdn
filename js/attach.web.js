@@ -36,7 +36,7 @@
       aspXX = $(this).width();
       aspYY = $(this).height();
       
-      aspX = 2048;
+      aspX = 1024;
       aspY = aspX / 1.41;
       file_display_area = $(this);
       $('#fileInput').click();
