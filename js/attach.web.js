@@ -8,18 +8,10 @@
     if ($(window).width() > $(window).height()) {
       image_dimension_y = $(window).height()-50;
       image_dimension_x = image_dimension_y * 1.41;
-      $(window).on('resize', function(){
-        image_dimension_y = $(window).height()-50;
-        image_dimension_x = image_dimension_y * 1.41;
-      }).trigger('resize');
     }
     else {
       image_dimension_x = $(window).width()-20;
       image_dimension_y = image_dimension_x / 1.41;
-      $(window).on('resize', function(){
-        image_dimension_x = $(window).width()-20;
-        image_dimension_y = image_dimension_x / 1.41;
-      }).trigger('resize');
     }
 
     var scaled_width = 0;
