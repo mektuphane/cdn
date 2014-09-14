@@ -18,8 +18,8 @@
     var file_display_area = null;
     var ias = null;
     var jcrop_api;
-    var bottom_html = "<input type='file' id='fileInput' name='files[]'/><canvas id='canvas' style='display:none;'></canvas><div id='modal'></div><div id='preview'><div class='buttons'><div class='cancel'></div><div class='ok'></div></div></div>";
-    // $('body').append(bottom_html);
+    var bottom_html = "<input type='file' id='fileInput' name='files[]'/><canvas id='canvas' style='display:none;'></canvas><div id='modal'></div><div id='preview'><div class='buttons'><table class="table"><tbody><tr><td style='padding-right: 5px;'><div class='cancel'></div></td><td><div class='ok'></div></td></tr></tbody></table></div></div>";
+    $('body').append(bottom_html);
 
     //add click to element
     this.click(function() {
