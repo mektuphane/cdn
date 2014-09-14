@@ -213,8 +213,8 @@
     	var photo = file_display_area.attr('id');
     	console.log(photo);
     	$.ajax({
-    		// url: 'http://web.mektuphane.com/post/upload',
-        url: 'http://localhost:8080/post/upload',
+    		url: 'http://web.mektuphane.com/post/upload',
+        // url: 'http://localhost:8080/post/upload',
     		dataType: 'text',
     		data: {photo:image64},
     		type: 'POST',
