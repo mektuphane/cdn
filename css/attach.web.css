@@ -83,6 +83,7 @@
 
 .upload-photo{
   border: 1px solid #cccccc;
+  width: 100%;
 }
 
 #upload{
