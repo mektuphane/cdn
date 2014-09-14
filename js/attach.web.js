@@ -126,8 +126,8 @@
             var window_width = $(window).width() / 2 - scaled_width / 2 + "px";
             var window_height = $(window).height() / 2 - scaled_height / 2 + "px";
             
-            console.log(window_width);
-            console.log(window_height);
+            console.log($(window).width());
+            console.log(scaled_width);
 
             // Show image in modal view
             $("#preview").css("top", window_height);
