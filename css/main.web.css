@@ -29,6 +29,10 @@ a:hover, a:focus {
   border-radius: 0;
 } 
 
+.form-group {
+  margin-bottom: 10px;
+}
+
 .input-group .form-control {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -42,6 +46,7 @@ a:hover, a:focus {
 
 .alert {
  border-radius: 0; 
+ margin-bottom: 10px;
 }
 
 .form-signin .form-control {
