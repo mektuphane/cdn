@@ -40,6 +40,10 @@ a:hover, a:focus {
   border-radius: 0;
 }
 
+.alert {
+ border-radius: 0; 
+}
+
 .form-signin .form-control {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
