@@ -35,6 +35,13 @@ a:hover, a:focus {
   border-bottom-left-radius: 0;
 }
 
+input {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .form-signin .form-control {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
