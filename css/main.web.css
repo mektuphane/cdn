@@ -36,11 +36,7 @@ a:hover, a:focus {
   border-bottom-left-radius: 0;
 }
 
-.input-group .btn {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn {
   border-radius: 0;
 }
 
