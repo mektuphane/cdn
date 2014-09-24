@@ -3,15 +3,15 @@
   $.fn.simpleCropper = function() {
 
     var image_dimension_x = 300;
-    var image_dimension_y = image_dimension_x / 1.41;
+    var image_dimension_y = image_dimension_x / 1.48;
 
     if ($(window).width() > $(window).height()) {
       image_dimension_y = $(window).height()-$(window).height()/3;
-      image_dimension_x = image_dimension_y * 1.41;
+      image_dimension_x = image_dimension_y * 1.48;
     }
     else {
       image_dimension_x = $(window).width()-20;
-      image_dimension_y = image_dimension_x / 1.41;
+      image_dimension_y = image_dimension_x / 1.48;
     }
 
     var scaled_width = 0;
@@ -36,8 +36,8 @@
       aspXX = $(this).width();
       aspYY = $(this).height();
       
-      aspX = 1024;
-      aspY = aspX / 1.41;
+      aspX = 1748;
+      aspY = aspX / 1.48;
       file_display_area = $(this);
       $('#fileInput').click();
     });
