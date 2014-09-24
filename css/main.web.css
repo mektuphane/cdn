@@ -152,10 +152,6 @@ a:hover, a:focus {
 }
 
 @media (min-width: 992px){
-  .posted-photo{
-    width:450px;
-    height:320px;
-  }
   .thumbnail .card-photo{
     width:450px;
     height:320px;
@@ -172,10 +168,6 @@ a:hover, a:focus {
 }
 
 @media (min-width: 1200px){
-  .posted-photo{
-    width:530px;
-    height:376px;
-  }
   .thumbnail .card-photo{
     width:530px;
     height:376px;
