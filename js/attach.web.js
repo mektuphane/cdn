@@ -230,13 +230,9 @@
       photo_data.append('photo', image64);
 
     	$.ajax({
-    		//async: false,
         //url: 'http://www.mektuphane.com/post/upload',
         url: 'http://localhost:8080/post/upload',
-    		//dataType: 'text',
     		data: photo_data,
-        cache: false,
-        contentType: false,
         processData: false,
     		type: 'POST',
     		success: function(res, textStatus) {
