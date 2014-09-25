@@ -234,7 +234,7 @@
         url: 'http://localhost:8080/post/upload',
     		//dataType: 'text',
         processData: false,
-    		data: {image64},
+    		data: image64,
     		//type: 'POST',
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
