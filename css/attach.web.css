@@ -97,6 +97,11 @@
     width:450px;
     height:304px;
   }
+  .upload-manager-photo{
+    border: 1px solid #cccccc;
+    width:440px;
+    height:304px;
+  }
   #upload{
    padding-left: 0px; 
    padding-right: 0px;
@@ -109,6 +114,11 @@
   .upload-photo{
     border: 1px solid #cccccc;
     width:530px;
+    height:358px;
+  }
+  .upload-manager-photo{
+    border: 1px solid #cccccc;
+    width:538px;
     height:358px;
   }
   #upload{

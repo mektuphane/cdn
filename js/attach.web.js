@@ -215,6 +215,12 @@
       // image.width = aspXX;
       // image.height = aspYY;
       image.className="upload-photo";
+      if(document.URL == 'http://localhost:8080/manager/cards'){
+        image.className="upload-manager-photo";
+      }
+      else if(document.URL == 'http://localhost:8080/manager/cards'){
+        image.className="upload-manager-photo";
+      }
 
       // Append it to the body element
       $('#preview').delay(100).hide();
