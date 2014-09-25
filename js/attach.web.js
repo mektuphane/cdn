@@ -232,9 +232,6 @@
     		data: {photo:image64},
     		type: 'POST',
     		success: function(res, textStatus) {
-          
-          console.log(res);
-
           jq_json_obj = $.parseJSON(res);
           if(typeof jq_json_obj == 'object'){
             jq_obj = eval (jq_json_obj); 
@@ -242,17 +239,15 @@
             for(elem in jq_obj){
                 jq_array.push(jq_obj[elem]);
             }
-            console.log(jq_array);
-
             image.src = jq_array[1];
             $("#posted_small_photo").val(jq_array[0]);
             $("#posted_big_photo").val(jq_array[1]);
-            
           }else{
-            console.log("Error occurred!"); 
+            console.log("UPLOAD PHOTO ERROR"); 
+            image.src = "null";
+            $("#posted_small_photo").val("null");
+            $("#posted_big_photo").val("null");
           }
-    			
-    			
     		}
     	});
 
