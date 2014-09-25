@@ -224,11 +224,12 @@
 
     	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
     	var photo = file_display_area.attr('id');
-    	//console.log(image64);
+    	console.log(photo);
     	$.ajax({
     		url: 'http://www.mektuphane.com/post/upload',
         //url: 'http://localhost:8080/post/upload',
         type: 'POST',
+    		dataType: 'text',
     		data: {photo:image64},
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
