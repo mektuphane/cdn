@@ -230,8 +230,8 @@
       photo_data.append('photo', image64);
 
     	$.ajax({
-        url: 'http://www.mektuphane.com/post/upload',
-        //url: 'http://localhost:8080/post/upload',
+        //url: 'http://www.mektuphane.com/post/upload',
+        url: 'http://localhost:8080/post/upload',
     		data: photo_data,
         cache: false,
         contentType: false,
@@ -241,30 +241,14 @@
           console.log(res);
           console.log(res[0]);
           console.log(res[1]);
-
-          // jq_json_obj = $.parseJSON(res);
-          // if(typeof jq_json_obj == 'object'){
-          //   jq_obj = eval (jq_json_obj); 
-          //   jq_array = [];
-
-          //   for(elem in jq_obj){
-          //       jq_array.push(jq_obj[elem]);
-          //   }
-          //   if(jq_array[1] == 'blank'){
-          //     image.src = "http://cdn.mektuphane.com/img/test/blank.jpg";
-          //   }
-          //   else{
-          //     image.src = jq_array[1];
-          //     $("#posted_small_photo").val(jq_array[0]);
-          //     $("#posted_big_photo").val(jq_array[1]);
-          //   }
-          // }else{
-          //   console.log("UPLOAD PHOTO ERROR"); 
-          //   image.src = "blank";
-          //   $("#posted_small_photo").val("blank");
-          //   $("#posted_big_photo").val("blank");
-          // }
-
+          if(res[1] == 'blank'){
+              image.src = "http://cdn.mektuphane.com/img/test/blank.jpg";
+          }
+          else{
+            image.src = res[1];
+            $("#posted_small_photo").val(res[0]);
+            $("#posted_big_photo").val(res[1]);
+          }
     		}
     	});
     }
