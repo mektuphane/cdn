@@ -229,9 +229,19 @@
       var photo_data = new FormData();
       photo_data.append('photo', image64);
 
+      var ajax_url = 'http://www.mektuphane.com/post/upload';
+      if(document.URL == 'http://localhost:8080/post/special'){
+        ajax_url = 'http://localhost:8080/post/upload';
+      }
+      else if(document.URL == 'http://localhost:8080/manager/cards'){
+        ajax_url = 'http://localhost:8080/manager/upload';
+      }
+      else if(document.URL == 'http://localhost:8080/manager/cards'){
+        var ajax_url = 'http://www.mektuphane.com/manager/upload';
+      }
+
     	$.ajax({
-        url: 'http://www.mektuphane.com/post/upload',
-        //url: 'http://localhost:8080/post/upload',
+        url: ajax_url,
     		data: photo_data,
         cache: false,
         contentType: false,
