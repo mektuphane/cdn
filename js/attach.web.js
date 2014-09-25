@@ -233,8 +233,10 @@
         //url: 'http://www.mektuphane.com/post/upload',
         url: 'http://localhost:8080/post/upload',
     		//dataType: 'text',
-        processData: false,
     		data: image64,
+        cache: false,
+        contentType: false,
+        processData: false,
     		type: 'POST',
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
