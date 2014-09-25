@@ -229,7 +229,7 @@
     		//url: 'http://www.mektuphane.com/post/upload',
         url: 'http://localhost:8080/post/upload',
     		dataType: 'text',
-    		data: {photo:dataUrl},
+    		data: {photo:dataUrl.toString()},
     		type: 'POST',
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
