@@ -210,8 +210,8 @@
       // Convert canvas image to normal img
       var dataUrl = canvas.toDataURL();
       var image = document.createElement('img');
-      //image.src = dataUrl;
-      image.src = 'http://cdn.mektuphane.com/img/attach/loader.gif';
+      image.src = dataUrl;
+      //image.src = 'http://cdn.mektuphane.com/img/attach/loader.gif';
       // image.width = aspXX;
       // image.height = aspYY;
       image.className="upload-photo";
@@ -224,7 +224,7 @@
 
     	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
     	var photo = file_display_area.attr('id');
-    	console.log(image64);
+    	//console.log(image64);
     	$.ajax({
     		url: 'http://www.mektuphane.com/post/upload',
         //url: 'http://localhost:8080/post/upload',
