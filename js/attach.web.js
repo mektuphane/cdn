@@ -228,8 +228,11 @@
     	$.ajax({
     		//url: 'http://www.mektuphane.com/post/upload',
         url: 'http://localhost:8080/post/upload',
-    		dataType: 'text',
-    		data: {photo:image64.toString()},
+        cache: false,
+        contentType: false,
+        processData: false,
+    		//dataType: 'text',
+    		data: {photo:image64},
     		type: 'POST',
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
