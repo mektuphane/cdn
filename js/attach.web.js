@@ -239,28 +239,32 @@
     		type: 'POST',
     		success: function(res) {
           console.log(res);
-          jq_json_obj = $.parseJSON(res);
-          if(typeof jq_json_obj == 'object'){
-            jq_obj = eval (jq_json_obj); 
-            jq_array = [];
+          console.log(res[0]);
+          console.log(res[1]);
 
-            for(elem in jq_obj){
-                jq_array.push(jq_obj[elem]);
-            }
-            if(jq_array[1] == 'blank'){
-              image.src = "http://cdn.mektuphane.com/img/test/blank.jpg";
-            }
-            else{
-              image.src = jq_array[1];
-              $("#posted_small_photo").val(jq_array[0]);
-              $("#posted_big_photo").val(jq_array[1]);
-            }
-          }else{
-            console.log("UPLOAD PHOTO ERROR"); 
-            image.src = "blank";
-            $("#posted_small_photo").val("blank");
-            $("#posted_big_photo").val("blank");
-          }
+          // jq_json_obj = $.parseJSON(res);
+          // if(typeof jq_json_obj == 'object'){
+          //   jq_obj = eval (jq_json_obj); 
+          //   jq_array = [];
+
+          //   for(elem in jq_obj){
+          //       jq_array.push(jq_obj[elem]);
+          //   }
+          //   if(jq_array[1] == 'blank'){
+          //     image.src = "http://cdn.mektuphane.com/img/test/blank.jpg";
+          //   }
+          //   else{
+          //     image.src = jq_array[1];
+          //     $("#posted_small_photo").val(jq_array[0]);
+          //     $("#posted_big_photo").val(jq_array[1]);
+          //   }
+          // }else{
+          //   console.log("UPLOAD PHOTO ERROR"); 
+          //   image.src = "blank";
+          //   $("#posted_small_photo").val("blank");
+          //   $("#posted_big_photo").val("blank");
+          // }
+
     		}
     	});
     }
