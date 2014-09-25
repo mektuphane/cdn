@@ -223,14 +223,14 @@
       file_display_area.append(image);
 
     	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
-    	var photo = file_display_area.attr('id');
+    	//var photo = file_display_area.attr('id');
     	//console.log(image64);
     	$.ajax({
-    		url: 'http://www.mektuphane.com/post/upload',
+    		//url: 'http://www.mektuphane.com/post/upload',
         //url: 'http://localhost:8080/post/upload',
-    		dataType: 'text',
+        url: 'http://requestb.in/10k3bv21',
+        type: 'POST',
     		data: {photo:image64},
-    		type: 'POST',
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
           if(typeof jq_json_obj == 'object'){
