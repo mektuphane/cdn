@@ -233,9 +233,11 @@
     		type: 'POST',
     		success: function(res, textStatus) {
     			console.log(res);
-    			image.src = res[1];
-          $("#posted_small_photo").val(res[0]);
-          $("#posted_big_photo").val(res[1]);
+          var photo_res = new Array(res);
+          console.log(photo_res);
+    			image.src = photo_res[1];
+          $("#posted_small_photo").val(photo_res[0]);
+          $("#posted_big_photo").val(photo_res[1]);
     		}
     	});
 
