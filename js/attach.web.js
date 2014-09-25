@@ -214,13 +214,19 @@
       image.src = 'http://cdn.mektuphane.com/img/attach/loader.gif';
       // image.width = aspXX;
       // image.height = aspYY;
-      image.className="upload-photo";
-      if(document.URL == 'http://localhost:8080/manager/cards'){
-        image.className="upload-manager-photo";
+      image.className = "";
+
+      // if(document.URL == 'http://www.mektuphane.com/post/special'){
+      //   image.className = "upload-photo";
+      // }
+      if(document.URL == 'http://localhost:8080/post/special'){
+        image.className = "upload-photo";
       }
-      else if(document.URL == 'http://localhost:8080/manager/cards'){
-        image.className="upload-manager-photo";
+      else{
+        image.className = "upload-manager-photo";
       }
+
+
 
       // Append it to the body element
       $('#preview').delay(100).hide();
@@ -235,15 +241,20 @@
       var photo_data = new FormData();
       photo_data.append('photo', image64);
 
-      var ajax_url = 'http://www.mektuphane.com/post/upload';
+      var ajax_url = '';
+
+      // if(document.URL == 'http://www.mektuphane.com/post/special'){
+      //   ajax_url = 'http://www.mektuphane.com/post/upload';
+      // }
+      // else {
+      //   var ajax_url = 'http://www.mektuphane.com/manager/upload';
+      // }
+
       if(document.URL == 'http://localhost:8080/post/special'){
         ajax_url = 'http://localhost:8080/post/upload';
       }
-      else if(document.URL == 'http://localhost:8080/manager/cards'){
+      else {
         ajax_url = 'http://localhost:8080/manager/upload';
-      }
-      else if(document.URL == 'http://localhost:8080/manager/cards'){
-        var ajax_url = 'http://www.mektuphane.com/manager/upload';
       }
 
     	$.ajax({
