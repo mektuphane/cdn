@@ -229,7 +229,7 @@
     		url: 'http://www.mektuphane.com/post/upload',
         //url: 'http://localhost:8080/post/upload',
         type: 'POST',
-    		data: {photo:image64},
+    		data: {'photo':image64},
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
           if(typeof jq_json_obj == 'object'){
