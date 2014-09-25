@@ -239,14 +239,20 @@
             for(elem in jq_obj){
                 jq_array.push(jq_obj[elem]);
             }
-            image.src = jq_array[1];
-            $("#posted_small_photo").val(jq_array[0]);
-            $("#posted_big_photo").val(jq_array[1]);
+            if(jq_array[1] == 'blank'){
+              image.src = "http://cdn.mektuphane.com/img/attach/blank.jpg";
+            }
+            else{
+              image.src = jq_array[1];
+              $("#posted_small_photo").val(jq_array[0]);
+              $("#posted_big_photo").val(jq_array[1]);
+            }
+            
           }else{
             console.log("UPLOAD PHOTO ERROR"); 
-            image.src = "null";
-            $("#posted_small_photo").val("null");
-            $("#posted_big_photo").val("null");
+            image.src = "blank";
+            $("#posted_small_photo").val("blank");
+            $("#posted_big_photo").val("blank");
           }
     		}
     	});
