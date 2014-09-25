@@ -232,12 +232,27 @@
     		data: {photo:image64},
     		type: 'POST',
     		success: function(res, textStatus) {
-    			console.log(res);
-          var photo_res = new Array(res);
-          console.log(photo_res);
-    			image.src = photo_res[1];
-          $("#posted_small_photo").val(photo_res[0]);
-          $("#posted_big_photo").val(photo_res[1]);
+          
+          console.log(res);
+
+          jq_json_obj = $.parseJSON(res);
+          if(typeof jq_json_obj == 'object'){
+            jq_obj = eval (jq_json_obj); 
+            jq_array = [];
+            for(elem in jq_obj){
+                jq_array.push(jq_obj[elem]);
+            }
+            console.log(jq_array);
+
+            image.src = jq_array[1];
+            $("#posted_small_photo").val(jq_array[0]);
+            $("#posted_big_photo").val(jq_array[1]);
+            
+          }else{
+            console.log("Error occurred!"); 
+          }
+    			
+    			
     		}
     	});
 
