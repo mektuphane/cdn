@@ -240,7 +240,7 @@
                 jq_array.push(jq_obj[elem]);
             }
             if(jq_array[1] == 'blank'){
-              image.src = "http://cdn.mektuphane.com/img/attach/blank.jpg";
+              image.src = "http://cdn.mektuphane.com/img/test/blank.jpg";
             }
             else{
               image.src = jq_array[1];
