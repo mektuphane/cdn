@@ -126,8 +126,8 @@
             var window_width = $(window).width() / 2 - $('#preview').width() / 2 + "px";
             var window_height = $(window).height() / 2 - scaled_height / 2 + "px";
 
-            console.log(window_width);
-            console.log(window_height);
+            // console.log(window_width);
+            // console.log(window_height);
 
             // Show image in modal view
             $("#preview").css("top", window_height);
@@ -224,7 +224,7 @@
 
     	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
     	var photo = file_display_area.attr('id');
-    	console.log(photo);
+    	console.log(image64);
     	$.ajax({
     		url: 'http://www.mektuphane.com/post/upload',
         //url: 'http://localhost:8080/post/upload',
