@@ -226,15 +226,16 @@
     	var photo = file_display_area.attr('id');
     	console.log(photo);
     	$.ajax({
-    		url: 'http://www.mektuphane.com/post/upload',
-        // url: 'http://localhost:8080/post/upload',
+    		//url: 'http://www.mektuphane.com/post/upload',
+        url: 'http://localhost:8080/post/upload',
     		dataType: 'text',
     		data: {photo:image64},
     		type: 'POST',
     		success: function(res, textStatus) {
     			console.log(res);
-    			image.src = res;
-          $("#posted_photo").val(res);
+    			image.src = res[1];
+          $("#posted_small_photo").val(res[0]);
+          $("#posted_big_photo").val(res[1]);
     		}
     	});
 
