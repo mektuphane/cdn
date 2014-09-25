@@ -222,19 +222,20 @@
       file_display_area.html('');
       file_display_area.append(image);
 
-    	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, '');
+    	var image64 = dataUrl.replace(/^data:image\/(png|jpg);base64,/, 'photo:');
     	var photo = file_display_area.attr('id');
     	// console.log(photo);
 
       
 
     	$.ajax({
-    		async: false,
+    		//async: false,
         //url: 'http://www.mektuphane.com/post/upload',
         url: 'http://localhost:8080/post/upload',
-    		dataType: 'text',
-    		data: {photo:image64},
-    		type: 'POST',
+    		//dataType: 'text',
+        processData: false,
+    		data: {image64},
+    		//type: 'POST',
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
           if(typeof jq_json_obj == 'object'){
