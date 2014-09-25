@@ -231,7 +231,7 @@
         type: 'POST',
     		dataType: 'text',
         processData: false,
-    		data: {value:image64},
+    		data: {photo:dataUrl},
     		success: function(res, textStatus) {
           jq_json_obj = $.parseJSON(res);
           if(typeof jq_json_obj == 'object'){
