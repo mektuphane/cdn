@@ -16,6 +16,11 @@ body {
   height: 200px;
 }
 
+.posted-photo {
+    width:100%;
+    height:100%;
+}
+
 a {
 	color: #000;
 	text-decoration: none;
@@ -153,11 +158,6 @@ a:hover, a:focus {
 .footer hr{
   border-top: 1px solid #C3C3C3;
 }*/
-
-.posted-photo{
-    width:100%;
-    height:100%;
-}
 
 .posted-photo-small{
     width: 75px;
