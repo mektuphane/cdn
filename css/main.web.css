@@ -160,7 +160,14 @@ a:hover, a:focus {
     height:67.5%;
 }
 
+.main-appstore {
+  width:100px;
+}
+
 @media (min-width: 992px){
+  .main-appstore {
+    width:180px;
+  }
   .thumbnail .card-photo{
     width:450px;
     height:304px;
@@ -177,6 +184,9 @@ a:hover, a:focus {
 }
 
 @media (min-width: 1200px){
+  .main-appstore {
+    width:180px;
+  }
   .thumbnail .card-photo{
     width:530px;
     height:358px;
@@ -224,8 +234,4 @@ a:hover, a:focus {
 
 .modal-content {
  border-radius: 3px; 
-}
-
-.main-appstore {
-  width:180px;
 }
