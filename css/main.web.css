@@ -126,9 +126,9 @@ a:hover, a:focus {
 	margin-bottom: 20px;
 }
 
-<%--			.prevLink {--%>
-<%--				font-size: 0%;--%>
-<%--			}--%>
+/*.prevLink {
+  font-size: 0%;
+}*/
 
 .currentStep {
 	padding: 4px;
@@ -140,11 +140,11 @@ a:hover, a:focus {
 	font-size: 100%;
 }
 
-<%--			.nextLink {--%>
-<%--				font-size: 200%;--%>
-<%--				margin-top: 20px;--%>
-<%--				display:block;--%>
-<%--			}--%>
+/*.nextLink {
+  font-size: 200%;
+  margin-top: 20px;
+  display:block;
+}*/
 
 /*.footer {
   background-color: #e7e7e7;
