@@ -48,9 +48,11 @@ $(document).ready(function() {
     });
  })(jQuery);
 
-$("#headerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_header.png");
+// $("#headerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_header.png");
+// $("#footerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 
-$("#footerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
+$("#headerCarousel").backstretch("https://farm4.staticflickr.com/3859/15174866990_6d4129cb35_o.png");
+$("#footerCarousel").backstretch("https://farm3.staticflickr.com/2944/15361248622_60c345dc09_o.png");
 
 $("[id^='collapse-']").on('shown.bs.collapse', function () {
     jQuery("[id^='list-group_']").mCustomScrollbar("scrollTo","bottom")
