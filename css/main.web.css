@@ -235,3 +235,9 @@ a:hover, a:focus {
 .modal-content {
  border-radius: 3px; 
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
