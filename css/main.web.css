@@ -128,13 +128,13 @@ a:hover, a:focus {
 <%--				display:block;--%>
 <%--			}--%>
 
-.footer {
+/*.footer {
   background-color: #e7e7e7;
 }
 
 .footer hr{
   border-top: 1px solid #C3C3C3;
-}
+}*/
 
 .posted-photo{
     width:100%;
@@ -234,6 +234,11 @@ a:hover, a:focus {
 
 .modal-content {
  border-radius: 3px; 
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 .footer {
