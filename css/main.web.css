@@ -225,3 +225,7 @@ a:hover, a:focus {
 .modal-content {
  border-radius: 3px; 
 }
+
+.main-appstore {
+  width:180px;
+}
