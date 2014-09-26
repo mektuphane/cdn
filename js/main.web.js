@@ -50,6 +50,8 @@ $(document).ready(function() {
 
 $("#myCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 
+$("#myFooterCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_footer.png");
+
 $("[id^='collapse-']").on('shown.bs.collapse', function () {
     jQuery("[id^='list-group_']").mCustomScrollbar("scrollTo","bottom")
 })
