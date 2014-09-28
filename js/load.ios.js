@@ -22,15 +22,6 @@ function loadScripts(array,callback){
 loadScripts([
 	"http://cdn.mektuphane.com/js/jquery-1.11.1.min.js",
 	"http://cdn.mektuphane.com/js/bootstrap.min.js",
-    "//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js",
-    "http://cdn.mektuphane.com/js/jquery.Jcrop.min.js",
-    "http://cdn.mektuphane.com/js/bootstrap-multiselect.js",
-    "http://cdn.mektuphane.com/js/remoteNonStopPageScroll.js",
-    "http://cdn.mektuphane.com/js/bootstrap-maxlength.min.js",
-    "http://cdn.mektuphane.com/js/jquery.backstretch.min.js",
-    "http://cdn.mektuphane.com/js/jquery.mCustomScrollbar.concat.min.js",
-    "http://cdn.mektuphane.com/js/ion.sound.js",
-    "http://cdn.mektuphane.com/js/attach.web.js",
     "http://cdn.mektuphane.com/js/main.ios.js"
 ],function(){
     console.info('LOADED');
