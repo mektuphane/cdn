@@ -48,14 +48,17 @@ $(document).ready(function() {
     });
  })(jQuery);
 
-// $("#headerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_header.png");
-// $("#footerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
+//$("#headerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_header.png");
+//$("#footerCarousel").backstretch("http://cdn.mektuphane.com/img/test/img_banner_goggles.png");
 
 //$("#headerCarousel").backstretch("https://farm4.staticflickr.com/3859/15174866990_6d4129cb35_o.png");
 //$("#footerCarousel").backstretch("https://farm3.staticflickr.com/2944/15361248622_60c345dc09_o.png");
 
-$("#headerCarousel").backstretch("https://farm4.staticflickr.com/3859/15174866990_13c724415b_b.jpg");
-$("#footerCarousel").backstretch("https://farm3.staticflickr.com/2944/15361248622_6373a30509_b.jpg");
+//$("#headerCarousel").backstretch("https://farm4.staticflickr.com/3859/15174866990_13c724415b_b.jpg");
+//$("#footerCarousel").backstretch("https://farm3.staticflickr.com/2944/15361248622_6373a30509_b.jpg");
+
+$("#headerCarousel").backstretch("https://farm4.staticflickr.com/3945/15518028326_b7da58a47e_o.jpg");
+$("#footerCarousel").backstretch("https://farm4.staticflickr.com/3942/15355112189_cb664c9d74_o.jpg");
 
 $("[id^='collapse-']").on('shown.bs.collapse', function () {
     jQuery("[id^='list-group_']").mCustomScrollbar("scrollTo","bottom")
